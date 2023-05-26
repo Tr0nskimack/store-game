@@ -11,7 +11,7 @@ const Content = () => {
           width={1400}
           height={500}
           alt="Call of duty"
-          className="w-full h-[500px] object-cover object-top rounded-2xl"
+          className="w-full h-[500px] object-cover object-top md:object-top rounded-2xl"
         />
       </div>
       <div className="flex items-center justify-between gap-8 flex-wrap">
