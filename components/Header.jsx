@@ -22,7 +22,7 @@ const Header = () => {
         >
           <RiMenuLine />
         </button>
-        {/* MENU MOBIL LATERAL */}
+        {/* MENU MOBIL LATERAL para que salga */}
         <div
           className={`fixed top-0 -left-full bg-[#181a20] w-full h-full z-50 transition-all ${
             showMenu ? "left-0" : "-left-full"
@@ -50,9 +50,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        {/* MENU */}
-        <ul className="md:hidden lg:flex gap-6 ">
-            <li className="">
+        {/* MENU DESKTOp */}
+        <ul className="hidden lg:flex gap-6 ">
+            <li>
               <Link href={"/"}>Home</Link>
             </li>
             <li className="hover:text-[#e58d27] transition-colors ">
