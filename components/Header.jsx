@@ -22,12 +22,13 @@ const Header = () => {
         >
           <RiMenuLine />
         </button>
+        {/* MENU MOBIL LATERAL */}
         <div
           className={`fixed top-0 -left-full bg-[#181a20] w-full h-full z-50 transition-all ${
             showMenu ? "left-0" : "-left-full"
           }`}
         >
-          <ul>
+          <ul >
             <button
               className="text-gray-500 text-3xl p-4"
               onClick={() => setShowMenu(!showMenu)}
@@ -50,9 +51,23 @@ const Header = () => {
           </ul>
         </div>
         {/* MENU */}
-        <ul className="hidden lg:flex gap-6"></ul>
+        <ul className="md:hidden lg:flex gap-6 ">
+            <li className="">
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li className="hover:text-[#e58d27] transition-colors ">
+              <Link href={"/"}>Streams</Link>
+            </li>
+            <li className="text-[#e58d27] transition-colors ">
+              <Link href={"/"}>Games Store</Link>
+            </li>
+            <li className="hover:text-[#e58d27] transition-colors ">
+              <Link href={"/"}>New</Link>
+            </li>
+          
+        </ul>
         {/* USER MENU */}
-        <ul className="text-gray-300 flex gap-6 items-center text-xl">
+        <ul className="text-gray-300 flex gap-6 items-center text-xl ">
           <li>
             <button className="hover:text-[#e58d27] transition-colors">
               <RiShoppingCart2Line />

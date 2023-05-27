@@ -16,7 +16,7 @@ const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <>
-      <div className={`w-[80%] lg:w-80 md:w-[40%] h-full fixed lg:static ${showSidebar ? "left-0" : "-left-full"}   overflow-y-scroll transition-all bg-[#181a20] p-4 shadow-2xl lg:shadow-none`}>
+      <div className={`w-[80%] lg:w-80 md:w-[40%] h-full fixed lg:static ${showSidebar ? "left-0" : "-left-full"}   overflow-y-scroll transition-all bg-[#181a20] p-4 lg:p-0 shadow-2xl lg:shadow-none`}>
         
         {/* Search */}
         <div className="bg-[#362c29]/50 text-gray-300 p-4 rounded-2xl">
@@ -137,7 +137,7 @@ const Sidebar = () => {
         </div>
       </div>
       {/* Button Mobile */}
-      <button onClick={()=>setShowSidebar(!showSidebar)} className=" bg-[#e58d27] rounded-full fixed bottom-4 right-4 p-4 z-40 ">
+      <button onClick={()=>setShowSidebar(!showSidebar)} className=" bg-[#e58d27] lg:hidden rounded-full fixed bottom-4 right-4 p-4 z-40 ">
         {showSidebar ? <RiCloseLine/>  : <RiFilterLine/> }
       </button>
     </>
