@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="h-[10vh] text-gray-400 py-4 px-10 justify-between items-center flex bg-[#181a20] z-40">
+      <header className=" h-[7vh] md:h-[10vh] text-gray-400 py-4 px-10 justify-between items-center flex bg-[#181a20] z-40">
         {/* MOBILE */}
 
         <button

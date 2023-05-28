@@ -14,7 +14,7 @@ const Content = () => {
           className="w-full h-[500px] object-cover object-top md:object-top rounded-2xl"
         />
       </div>
-      <div className="flex items-center md:grid md:grid-cols-2 lg:flex lg:justify-between gap-8 flex-wrap">
+      <div className="flex items-center md:grid md:grid-cols-2 xl:flex justify-around gap-8 flex-wrap">
         <Card img="/free.jpg" title = "Free Fire" category= "PS-X" price="51" />
         <Card img="/assasing.jpg" title = "Assasing Creed" category= "360" price="48" />
         <Card img="/vanquish.jpg" title = "Vanquish" category= "DS" price="74" />
